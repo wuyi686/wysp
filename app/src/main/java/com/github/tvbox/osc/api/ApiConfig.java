@@ -128,7 +128,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://www.wya6.cn/tv/yd.php");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
